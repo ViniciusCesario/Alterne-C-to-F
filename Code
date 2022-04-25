@@ -1,0 +1,31 @@
+#include <iostream>  //iostream é parte de uma biblioteca de C++ que inclui vários input/output
+#include <locale> // é parte de uma Biblioteca de C++ que inclui idiomas
+
+
+using namespace std; //permite a definição de estruturas, estruturas, classes, funções, constantes, etc, que estarão vinculadas a ele. 
+
+
+int main() // A função main é o local de início(entry point) da execução de um programa em C/C++
+
+{
+	double temp; //double é uma variavel que possui a possibilidade de decimais, como iremos usar temperatura é a mais indicada
+	double conv; //Outra variavel do tipo double para conseguirmos fazer a nossa conversão.
+
+
+	cout << "Digite uma temperatura: "; //Cout é o modo como se imprime a informação na tela do nosso programa
+	cin >> temp; //Cin é o que queremos que nosso utilizar digite em nosso programa, no caso um número
+
+	{
+
+		conv = (temp * 1.8) + 32; //Aqui reallizamos a conversão de C para F com a variavel conv, como sabemos a funcao
+		//para se converter uma temperatura esta no anunciado.
+
+		cout << temp << " graus Celsius é igual a " << conv << " graus Fahrenheit.\n"; ////resultado de nossa conversão, diferente da calculadora usamos os valores das variaveis para apresentar o resultado. 
+
+	}
+
+	system("pause"); // Incrementei um system pause para a parada do programa, para a janela não ser fechada automaticamente.
+
+	return 0;//na função main() o valor do return seria considerado como o valor de saída para a aplicação. 
+	//E o valor 0 significado algo bem sucedido, enquanto outros valores seriam de erro.
+}
